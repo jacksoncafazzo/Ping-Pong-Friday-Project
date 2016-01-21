@@ -12,7 +12,7 @@ $(document).ready(function() {
     // var puzzleResult = wordPuzzle.replace(/a|e|i|o|u/gi, "-");
 
     $(".puzzleResult").text(puzzleResult);
-    $(".result").show();
+    $("#modal").modal('show');
 
     event.preventDefault();
   });
