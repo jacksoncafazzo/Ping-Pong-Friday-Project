@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     var userInput = $("input#sentence").val();
     var puzzleResult = wordPuzzle(userInput);
-    // var puzzleResult = wordPuzzle.replace(/a|e|i|o|u/gi, "-");
+    // var puzzleResult = userInput.replace(/a|e|i|o|u/gi, "-");
 
     $(".puzzleResult").text(puzzleResult);
     $("#modal").modal('show');
