@@ -14,6 +14,20 @@ var pingReplacer = function (arrayValue) {
   return arrayValue
 }
 
+var pongReplacer = function (arrayValue) {
+  if (arrayValue % 5 === 0) {
+    var arrayValue = 'poNg'
+  }
+  return arrayValue
+}
+
+var pingpongReplacer = function (arrayValue) {
+  if (arrayValue % 15 === 0) {
+    var arrayValue = 'pIngPoNg'
+  }
+  return arrayValue
+}
+
 // $(document).ready(function() {
 
   // });

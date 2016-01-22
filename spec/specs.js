@@ -13,3 +13,15 @@ describe("pingReplacer", function() {
     expect(pingReplacer(9)).to.equal("pIng");
   });
 });
+
+describe("pongReplacer", function() {
+  it("replaces numbers divisible by 5 with 'poNg'", function() {
+    expect(pongReplacer(10)).to.equal("poNg");
+  });
+});
+
+describe("pingpongReplacer", function() {
+  it("replaces numbers divisible by 15 with 'pIngPoNg'", function() {
+    expect(pingpongReplacer(30)).to.equal("pIngPoNg");
+  });
+});
