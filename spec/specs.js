@@ -29,3 +29,9 @@ describe("pingpongReplacer", function() {
     expect(pingpongReplacer(30)).to.equal("pIngPoNg");
   });
 });
+
+describe("arrayToList", function() {
+  it("turns array values into an unordered list items", function() {
+    expect(arrayToList([1,2])).to.equal("<li>1</li>,<li>2</li>");
+  });
+});

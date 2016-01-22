@@ -1,5 +1,4 @@
 var getNumberArray = function (userNumber) {
-  // debugger;
   var numberArray = [];
   var arrayValue;
   for (var i = 0; i < userNumber; i++) {
@@ -33,6 +32,20 @@ var pingpongReplacer = function (arrayValue) {
   return arrayValue
 }
 
+var arrayToList = function (numberArray) {
+  var listItemList = "";
+  for (var i = 0; i < numberArray.length; i++) {
+    var arrayValue = numberArray[i];
+    if (arrayValue < numberArray.length) {
+      var listItem = "<li>" + arrayValue + "</li>,";
+    } else {
+      var listItem = "<li>" + arrayValue + "</li>";
+    }
+    listItemList = listItemList.concat(listItem);
+  }
+
+  return listItemList;
+}
 // $(document).ready(function() {
 
   // });
