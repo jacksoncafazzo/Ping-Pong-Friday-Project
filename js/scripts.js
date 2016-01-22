@@ -36,17 +36,18 @@ var arrayToList = function (numberArray) {
   var listItemList = "";
   for (var i = 0; i < numberArray.length; i++) {
     var arrayValue = numberArray[i];
-    if (i + 1 < numberArray.length) {
-      var listItem = "<li>" + arrayValue + "</li>,";
-    } else {
-      var listItem = "<li>" + arrayValue + "</li>";
-    }
-    listItemList = listItemList.concat(listItem);
+    document.write("<li>" + arrayValue + "</li>");
+    // listItemList = listItemList.concat(listItem);
   }
-
   return listItemList;
 }
-// $(document).ready(function() {
+$(document).ready(function() {
+  $("form#userInput").submit(function(event) {
+    var userInput = $("input#userInput").val();
+    debugger;
+    var arrayToList = getNumberArray(userInput);
+    $(".results").text(arrayToList);
 
-  // });
-// });
+    event.preventDefault();
+  });
+});
