@@ -41,4 +41,8 @@ body {
   border: 3px solid #AA8539;
   margin: 0px;
   font-size: 25px;
+  -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    height: 400px;
 }

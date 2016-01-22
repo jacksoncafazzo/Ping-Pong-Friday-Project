@@ -31,7 +31,7 @@ var arrayToCols = function (userNumber) {
   // debugger;
    if (index <= 13) {
     var arrayCol = arrayToList(numberArray);
-   }
+  }
   console.log(arrayToList(numberArray));
   console.log(numberArray);
   return arrayCol;
@@ -43,7 +43,7 @@ $(document).ready(function() {
     $(".results").empty();
     var userInput = $("input#userInput").val();
     // debugger;
-    var arrayToList = getNumberArray(userInput);
+    var arrayToList = arrayToCols(userInput);
     $(".results").append(arrayToList);
 
     event.preventDefault();
