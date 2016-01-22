@@ -41,6 +41,7 @@ var arrayToList = function (numberArray) {
   }
   return listItemList;
 }
+
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
     $(".results").empty();
