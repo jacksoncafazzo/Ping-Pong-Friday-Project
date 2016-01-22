@@ -1,12 +1,39 @@
+.headerTime {
+  background-color: lightcyan;
+  width: 100%;
+  height: 100&;
+  border: 1px solid #CCC;
+  margin: 0px auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  font-family: Palantino;
+}
+
+.userInput {
+  background-color: #CCC;
+  width: 100%;
+  height: 100&;
+  border: 1px solid #CCC;
+  margin: 0px;
+  padding-bottom: 25px;
+}
+
 #userInput {
+  font-family: monospace;
   text-align: center;
 }
 
-.headerTime {
-  background-color: lightcyan;
-  text-align: center;
+.resultSection {
+  background-color: #CCC;
   width: 100%;
   height: 100&;
-  position: relative;
-  top: 0;
+  border: 1px solid #CCC;
+  margin: 0px;
+  font-size: 25px;
 }
