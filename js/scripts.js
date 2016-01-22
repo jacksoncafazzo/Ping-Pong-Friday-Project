@@ -12,6 +12,10 @@ var getNumberArray = function (userNumber) {
     }
     numberArray.push(arrayValue);
   }
+  return numberArray;
+}
+
+var arrayToList = function () {
   var listItemList = "";
   for (i = 0; i < numberArray.length; i++) {
     var arrayValue = numberArray[i];
@@ -20,6 +24,9 @@ var getNumberArray = function (userNumber) {
   }
   return listItemList;
 }
+
+
+
 
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
