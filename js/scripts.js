@@ -12,12 +12,8 @@ var getNumberArray = function (userNumber) {
     }
     numberArray.push(arrayValue);
   }
-  return arrayToList(numberArray);
-}
-
-var arrayToList = function (numberArray) {
   var listItemList = "";
-  for (var i = 0; i < numberArray.length; i++) {
+  for (i = 0; i < numberArray.length; i++) {
     var arrayValue = numberArray[i];
     var listItem = ("<li>" + arrayValue + "</li>");
     listItemList = listItemList.concat(listItem);
