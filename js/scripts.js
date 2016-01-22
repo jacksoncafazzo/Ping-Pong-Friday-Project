@@ -1,9 +1,16 @@
 var getNumberArray = function (userNumber) {
   var numberArray = [];
   for (var i = 1; i <= userNumber; i++) {
-    numberArray.push(i);
+    var arrayValue = (numberArray[i-2] + 1);
+    arrayValue = pingReplacer(arrayValue);
+    arrayValue = pongReplacer(arrayValue);
+    arrayValue = pingpongReplacer(arrayValue);
+    if (i > 1) {
+      numberArray.push(arrayValue);
+    } else {
+      numberArray.push(1)
   }
-  // var resultString = numberArray.join(" * ");
+  }
   return numberArray;
 }
 
