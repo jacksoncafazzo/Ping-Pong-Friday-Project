@@ -16,24 +16,6 @@ describe("getNumberArray", function(userNumber) {
   });
 });
 
-describe("pingReplacer", function() {
-  it("replaces numbers divisible by 3 with 'ping'", function() {
-    expect(pingReplacer(9)).to.equal("pIng");
-  });
-});
-
-describe("pongReplacer", function() {
-  it("replaces numbers divisible by 5 with 'poNg'", function() {
-    expect(pongReplacer(10)).to.equal("poNg");
-  });
-});
-
-describe("pingpongReplacer", function() {
-  it("replaces numbers divisible by 15 with 'pIngPoNg'", function() {
-    expect(pingpongReplacer(30)).to.equal("pIngPoNg");
-  });
-});
-
 describe("arrayToList", function() {
   it("turns array values into an unordered list items", function() {
     expect(arrayToList([1,2,'pIng'])).to.equal("<li>1</li><li>2</li><li>pIng</li>");

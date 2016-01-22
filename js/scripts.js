@@ -3,33 +3,16 @@ var getNumberArray = function (userNumber) {
   var arrayValue;
   for (var i = 0; i < userNumber; i++) {
     arrayValue = (i + 1);
-    arrayValue = pingpongReplacer(arrayValue);
-    arrayValue = pongReplacer(arrayValue);
-    arrayValue = pingReplacer(arrayValue);
+    if (arrayValue % 15 === 0) {
+      var arrayValue = 'pIngPoNg';
+    } else if (arrayValue % 5 === 0) {
+      var arrayValue = 'poNg';
+    } else if (arrayValue % 3 === 0) {
+      var arrayValue = 'pIng';
+    }
     numberArray.push(arrayValue);
   }
   return arrayToList(numberArray);
-}
-
-var pingReplacer = function (arrayValue) {
-  if (arrayValue % 3 === 0) {
-    var arrayValue = 'pIng'
-  }
-  return arrayValue
-}
-
-var pongReplacer = function (arrayValue) {
-  if (arrayValue % 5 === 0) {
-    var arrayValue = 'poNg'
-  }
-  return arrayValue
-}
-
-var pingpongReplacer = function (arrayValue) {
-  if (arrayValue % 15 === 0) {
-    var arrayValue = 'pIngPoNg'
-  }
-  return arrayValue
 }
 
 var arrayToList = function (numberArray) {
