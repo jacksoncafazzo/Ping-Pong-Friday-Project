@@ -7,7 +7,12 @@ var getNumberArray = function (userNumber) {
   return numberArray;
 }
 
-
+var pingReplacer = function (arrayValue) {
+  if (arrayValue % 3 === 0) {
+    var arrayValue = 'pIng'
+  }
+  return arrayValue
+}
 
 // $(document).ready(function() {
 
