@@ -10,6 +10,10 @@ describe("getNumberArray", function(userNumber) {
   it("outputs as array from 1 to userNumber replacing ping, pong and pingpong", function() {
     expect(getNumberArray(15)).to.eql([1, 2, "pIng", 4, "poNg", "pIng", 7, 8, "pIng", "poNg", 11, "pIng", 13, 14, "pIngPoNg"]);
   });
+
+  it("turns array values into an unordered list items", function() {
+    expect(getNumberArray(3)).to.equal("<li>1</li>,<li>2</li>,<li>pIng</li>");
+  });
 });
 
 describe("pingReplacer", function() {
@@ -32,6 +36,6 @@ describe("pingpongReplacer", function() {
 
 describe("arrayToList", function() {
   it("turns array values into an unordered list items", function() {
-    expect(arrayToList([1,2])).to.equal("<li>1</li>,<li>2</li>");
+    expect(arrayToList([1,2,'pIng'])).to.equal("<li>1</li>,<li>2</li>,<li>pIng</li>");
   });
 });

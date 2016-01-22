@@ -8,7 +8,7 @@ var getNumberArray = function (userNumber) {
     arrayValue = pingReplacer(arrayValue);
     numberArray.push(arrayValue);
   }
-  return numberArray;
+  return arrayToList(numberArray);
 }
 
 var pingReplacer = function (arrayValue) {
@@ -36,7 +36,7 @@ var arrayToList = function (numberArray) {
   var listItemList = "";
   for (var i = 0; i < numberArray.length; i++) {
     var arrayValue = numberArray[i];
-    if (arrayValue < numberArray.length) {
+    if (i + 1 < numberArray.length) {
       var listItem = "<li>" + arrayValue + "</li>,";
     } else {
       var listItem = "<li>" + arrayValue + "</li>";
