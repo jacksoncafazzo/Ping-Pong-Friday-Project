@@ -4,9 +4,9 @@ var getNumberArray = function (userNumber) {
   var arrayValue;
   for (var i = 0; i < userNumber; i++) {
     arrayValue = (i + 1);
-    arrayValue = pingReplacer(arrayValue);
-    arrayValue = pongReplacer(arrayValue);
     arrayValue = pingpongReplacer(arrayValue);
+    arrayValue = pongReplacer(arrayValue);
+    arrayValue = pingReplacer(arrayValue);
     numberArray.push(arrayValue);
   }
   return numberArray;
