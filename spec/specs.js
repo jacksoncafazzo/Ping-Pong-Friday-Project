@@ -18,6 +18,6 @@ describe("getNumberArray", function(userNumber) {
 
 describe("arrayToCols", function() {
   it("turns array values into a group of 13", function() {
-    expect(arrayToCols(15)).to.equal([1,2,3,4,5,6,7,8,9,10,11,12,13]);
+    expect(arrayToCols(13)).to.equal([1, 2, "pIng", 4, "poNg", "pIng", 7, 8, "pIng", "poNg", 11, "pIng", 13]);
   });
 });

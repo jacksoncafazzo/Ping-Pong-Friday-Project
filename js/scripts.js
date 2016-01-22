@@ -15,9 +15,9 @@ var getNumberArray = function (userNumber) {
   return numberArray;
 }
 
-var arrayToList = function () {
+var arrayToList = function (numberArray) {
   var listItemList = "";
-  for (i = 0; i < numberArray.length; i++) {
+  for (var i = 0; i < numberArray.length; i++) {
     var arrayValue = numberArray[i];
     var listItem = ("<li>" + arrayValue + "</li>");
     listItemList = listItemList.concat(listItem);
@@ -25,7 +25,17 @@ var arrayToList = function () {
   return listItemList;
 }
 
-
+var arrayToCols = function (userNumber) {
+  var numberArray = getNumberArray(userNumber);
+  var index = numberArray.length;
+  // debugger;
+   if (index <= 13) {
+    var arrayCol = arrayToList(numberArray);
+   }
+  console.log(arrayToList(numberArray));
+  console.log(numberArray);
+  return arrayCol;
+}
 
 
 $(document).ready(function() {
