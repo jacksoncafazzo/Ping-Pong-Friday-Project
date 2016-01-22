@@ -65,8 +65,7 @@ body {
   -moz-columns: 4;
   columns: 4;
   color: #FFE3AA;
-  padding-right: 63px;
-  padding-left: 45px;
+  max-width: 70%;
 }
 
 .footer {
@@ -99,7 +98,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 6px 6px 3px #805D15;
-
+  text-align: right;
 }
 
 .userLink a p {
