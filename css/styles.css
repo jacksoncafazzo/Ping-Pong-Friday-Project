@@ -1,0 +1,12 @@
+#userInput {
+  text-align: center;
+}
+
+.headerTime {
+  background-color: lightcyan;
+  text-align: center;
+  width: 100%;
+  height: 100&;
+  position: relative;
+  top: 0;
+}
