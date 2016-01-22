@@ -4,11 +4,13 @@ var getNumberArray = function (userNumber) {
   for (var i = 0; i < userNumber; i++) {
     arrayValue = (i + 1);
     if (arrayValue % 15 === 0) {
-      var arrayValue = 'pIngPoNg';
+      arrayValue = 'pIngPoNg';
+    } else if (arrayValue % 7 === 0) {
+      arrayValue = "<span class='glyphicon glyphicon-ice-lolly-tasted'></span>"; 
     } else if (arrayValue % 5 === 0) {
-      var arrayValue = 'poNg';
+      arrayValue = 'poNg';
     } else if (arrayValue % 3 === 0) {
-      var arrayValue = 'pIng';
+      arrayValue = 'pIng';
     }
     numberArray.push(arrayValue);
   }
