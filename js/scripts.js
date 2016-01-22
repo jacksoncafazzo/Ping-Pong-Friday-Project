@@ -12,7 +12,7 @@ var getNumberArray = function (userNumber) {
     }
     numberArray.push(arrayValue);
   }
-  return numberArray;
+  return arrayToList(numberArray);
 }
 
 var arrayToList = function (numberArray) {
@@ -25,25 +25,12 @@ var arrayToList = function (numberArray) {
   return listItemList;
 }
 
-var arrayToCols = function (userNumber) {
-  var numberArray = getNumberArray(userNumber);
-  var index = numberArray.length;
-  // debugger;
-   if (index <= 13) {
-    var arrayCol = arrayToList(numberArray);
-  }
-  console.log(arrayToList(numberArray));
-  console.log(numberArray);
-  return arrayCol;
-}
-
-
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
     $(".results").empty();
     var userInput = $("input#userInput").val();
     // debugger;
-    var arrayToList = arrayToCols(userInput);
+    var arrayToList = getNumberArray(userInput);
     $(".results").append(arrayToList);
 
     event.preventDefault();
