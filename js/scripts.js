@@ -1,15 +1,13 @@
 var getNumberArray = function (userNumber) {
+  // debugger;
   var numberArray = [];
-  for (var i = 1; i <= userNumber; i++) {
-    var arrayValue = (numberArray[i-2] + 1);
+  var arrayValue;
+  for (var i = 0; i < userNumber; i++) {
+    arrayValue = (i + 1);
     arrayValue = pingReplacer(arrayValue);
     arrayValue = pongReplacer(arrayValue);
     arrayValue = pingpongReplacer(arrayValue);
-    if (i > 1) {
-      numberArray.push(arrayValue);
-    } else {
-      numberArray.push(1)
-  }
+    numberArray.push(arrayValue);
   }
   return numberArray;
 }

@@ -1,6 +1,10 @@
 describe("getNumberArray", function(userNumber) {
-  it("outputs an array from 1 to userNumber with pIng for 3", function() {
-    expect(getNumberArray(3)).to.eql([1,2,'pIng']);
+//   it("outputs an array from 1 to userNumber with pIng for 3", function() {
+//     expect(getNumberArray(3)).to.eql([1,2,'pIng']);
+//   });
+
+  it("outputs an array from 1 to userNumber with pIng for 3 and poNg for 5", function() {
+    expect(getNumberArray(5)).to.eql([1,2,'pIng',4,'poNg']);
   });
 });
 
