@@ -36,17 +36,18 @@ var arrayToList = function (numberArray) {
   var listItemList = "";
   for (var i = 0; i < numberArray.length; i++) {
     var arrayValue = numberArray[i];
-    document.write("<li>" + arrayValue + "</li>");
-    // listItemList = listItemList.concat(listItem);
+    var listItem = ("<li>" + arrayValue + "</li>");
+    listItemList = listItemList.concat(listItem);
   }
   return listItemList;
 }
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
+    $(".results").empty();
     var userInput = $("input#userInput").val();
-    debugger;
+    // debugger;
     var arrayToList = getNumberArray(userInput);
-    $(".results").text(arrayToList);
+    $(".results").append(arrayToList);
 
     event.preventDefault();
   });
